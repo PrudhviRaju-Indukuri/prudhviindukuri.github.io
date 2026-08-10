@@ -32,6 +32,36 @@ section {
   z-index: 1000;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
+/* CONTACT ACTIONS & LINKEDIN BUTTON */
+.contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: #0f274d;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #38bdf8;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.social-icon-btn:hover {
+  background-color: #0066cc;
+  color: #ffffff;
+  border-color: #0066cc;
+}
+
+
 
 .nav-container {
   max-width: 1200px;
