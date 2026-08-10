@@ -1,35 +1,140 @@
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;color:#1f2937;background:#f8fafc;line-height:1.6}.hero{background:linear-gradient(135deg,#0f172a,#1f4e79);color:#fff;padding:28px}nav{display:flex;justify-content:space-between;align-items:center}.logo{font-weight:700;font-size:24px}.links a{color:#fff;text-decoration:none;margin-left:18px}.hero-content{max-width:760px;padding:72px 0}.hero h1{font-size:48px;margin-bottom:8px}.hero h2{font-size:24px;color:#dbeafe;margin-bottom:18px}.buttons{margin-top:24px}.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600;margin-right:12px}.primary{background:#fff;color:#1f4e79}.secondary{border:1px solid #cbd5e1;color:#fff}.section{max-width:1000px;margin:0 auto;padding:64px 24px}.section h3{font-size:30px;color:#1f4e79;margin-bottom:22px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:22px;box-shadow:0 6px 20px rgba(15,23,42,.06)}.card h4{margin-bottom:8px;color:#0f172a}.meta{color:#64748b;margin-bottom:12px}.skills{display:flex;flex-wrap:wrap;gap:10px}.skills span{background:#e8f1fb;color:#1f4e79;padding:10px 14px;border-radius:999px;font-weight:600}footer{text-align:center;padding:28px;color:#64748b}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<header class="hero">
-  <nav>
-    <div class="logo">PI</div>
-    <div class="links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+body {
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
+  line-height: 1.6;
+}
 
-  <div class="hero-container">
-    <div class="hero-text">
-      <p class="tag">Transportation & Traffic Engineer</p>
-      <h1>Prudhvi Indukuri</h1>
-      <p class="intro">
-        I specialize in Traffic Impact Studies, Traffic Operations, Synchro,
-        SimTraffic, HCM, and GDOT-related transportation analysis with
-        5+ years of experience across Georgia and New York transportation projects.
-      </p>
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1f4e79);
+  color: white;
+  min-height: 100vh;
+  padding: 30px 60px;
+}
 
-      <div class="buttons">
-        <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn secondary" href="resume.pdf">Download Resume</a>
-      </div>
-    </div>
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    <div class="hero-image">
-      <img src="Profile.jpg" alt="Prudhvi Indukuri" class="profile-photo">
-    </div>
-  </div>
-</header>
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 80px auto 0;
+  gap: 60px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.tag {
+  color: #93c5fd;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  margin: 15px 0;
+}
+
+.intro {
+  font-size: 18px;
+  color: #e5e7eb;
+  max-width: 650px;
+}
+
+.hero-image {
+  flex: 0 0 320px;
+}
+
+.profile-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.primary {
+  background: white;
+  color: #1f4e79;
+}
+
+.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.section h2 {
+  color: #1f4e79;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .profile-photo {
+    width: 220px;
+    height: 220px;
+  }
+}
