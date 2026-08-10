@@ -153,3 +153,29 @@ footer {
     height: 220px;
   }
 }
+
+
+.project-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-left: 6px solid #1f4e79;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #1f4e79;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #475569;
+  line-height: 1.7;
+}
+
