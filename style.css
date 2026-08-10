@@ -142,10 +142,15 @@ footer {
     padding: 20px;
   }
 
-  .hero-container {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 40px auto 0;
+  gap: 60px;
+}
 
   .hero-text h1 {
     font-size: 42px;
