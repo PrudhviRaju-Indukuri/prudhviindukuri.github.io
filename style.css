@@ -371,3 +371,77 @@ body {
     height: 260px;
   }
 }
+
+/* --- CIRCULAR PROFILE FRAME WITH GLOW (As seen in image) --- */
+.hero-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-frame {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  padding: 6px;
+  /* Multi-layered border gradient matching the deep blue background */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.05) 70%);
+  box-shadow: 0 0 35px rgba(2, 132, 199, 0.25);
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* --- LOGO BADGE (PI) --- */
+.logo-badge {
+  background-color: #ffffff;
+  color: #0b1d3a;
+  font-weight: 800;
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+/* --- STATS ICONS --- */
+.stat-icon {
+  color: #38bdf8; /* Vibrant cyan icon color */
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+/* --- ABOUT SKILL TAG CARDS --- */
+.skills-tags {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.tag-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.tag-icon {
+  color: #0284c7; /* Professional blue icon color */
+  font-size: 1.05rem;
+}
+
+/* --- SECTION ICONS --- */
+.section-icon {
+  color: #0284c7;
+  font-size: 1.4rem;
+}
