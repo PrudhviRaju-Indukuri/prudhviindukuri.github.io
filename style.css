@@ -73,9 +73,11 @@ nav {
   letter-spacing: 1px;
 }
 
-.hero-text h1 {
-  font-size: 56px;
-  margin: 15px 0;
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .intro {
@@ -85,7 +87,10 @@ nav {
 }
 
 .hero-image {
-  flex: 0 0 320px;
+  flex: 0 0 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-photo {
@@ -152,14 +157,20 @@ footer {
   gap: 60px;
 }
 
-  .hero-text h1 {
-    font-size: 42px;
-  }
+ .hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .profile-photo {
-    width: 220px;
-    height: 220px;
-  }
+.profile-photo {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
 
@@ -215,5 +226,30 @@ footer {
   .metrics {
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+
+
+
+  @media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+    margin-top: 24px;
+  }
+
+  .hero-image {
+    flex: none;
+  }
+
+  .profile-photo {
+    width: 220px;
+    height: 220px;
   }
 }
