@@ -14,8 +14,8 @@ body {
 .hero {
   background: linear-gradient(135deg, #0f172a, #1f4e79);
   color: white;
-  min-height: 100vh;
-  padding: 30px 60px;
+  min-height: 85vh;
+  padding: 20px 60px;
 }
 
 nav {
@@ -35,13 +35,28 @@ nav {
   margin-left: 20px;
 }
 
-.hero-container {
+.metrics {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 80px auto 0;
-  gap: 60px;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.metric h3 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.metric p {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .metrics {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .hero-text {
