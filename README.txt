@@ -1,0 +1,1 @@
+Upload index.html and style.css to the root of your repository. Add your resume as resume.pdf.
