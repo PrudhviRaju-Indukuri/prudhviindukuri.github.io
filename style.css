@@ -179,3 +179,33 @@ footer {
   line-height: 1.7;
 }
 
+.subtitle {
+  color: #93c5fd;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.metrics {
+  display: flex;
+  gap: 35px;
+  margin: 30px 0;
+}
+
+.metric h3 {
+  font-size: 34px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.metric p {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .metrics {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
