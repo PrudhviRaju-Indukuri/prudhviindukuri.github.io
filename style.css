@@ -14,8 +14,11 @@ body {
 .hero {
   background: linear-gradient(135deg, #0f172a, #1f4e79);
   color: white;
-  min-height: 85vh;
-  padding: 20px 60px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 60px;
 }
 
 nav {
