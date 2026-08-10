@@ -14,8 +14,8 @@ body {
 .hero {
   background: linear-gradient(135deg, #07162d, #123b67);
   color: white;
-  min-height: 85vh;
-  padding: 24px 60px;
+  min-height: 90vh;
+  padding: 28px 60px;
 }
 
 nav {
@@ -37,7 +37,7 @@ nav {
 
 .hero-container {
   max-width: 1200px;
-  margin: 50px auto 0;
+  margin: 60px auto 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,8 +52,8 @@ nav {
   color: #93c5fd;
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 1px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .hero-text h1 {
@@ -141,6 +141,35 @@ nav {
   margin-bottom: 20px;
 }
 
+.timeline-item {
+  border-left: 3px solid #123b67;
+  padding-left: 20px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #123b67;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: 6px;
+}
+
+.timeline-item h3 {
+  color: #123b67;
+  margin-bottom: 6px;
+}
+
+.timeline-item span {
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .project-card {
   background: white;
   border-radius: 16px;
@@ -153,10 +182,6 @@ nav {
 .project-card h3 {
   color: #123b67;
   margin-bottom: 10px;
-}
-
-.project-card p {
-  color: #475569;
 }
 
 footer {
