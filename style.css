@@ -226,3 +226,43 @@ footer {
     height: 240px;
   }
 }
+
+.project-card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 24px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(15,23,42,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(15,23,42,0.12);
+}
+
+.project-content h3 {
+  color: #123b67;
+  margin-bottom: 12px;
+}
+
+.project-content p {
+  color: #475569;
+  margin-bottom: 18px;
+}
+
+.project-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-tags span {
+  background: #e8f1fb;
+  color: #123b67;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
