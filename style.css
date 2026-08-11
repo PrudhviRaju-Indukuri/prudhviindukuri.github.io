@@ -909,3 +909,37 @@ a.logo-badge:hover,
     text-decoration: none;
   }
 }
+
+/* Desktop - hover dropdown */
+@media (min-width: 769px) {
+  .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all 0.2s ease;
+    display: block;
+  }
+
+  .dropdown-trigger:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile - click dropdown */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    position: static;
+    box-shadow: none;
+    margin-top: 8px;
+  }
+
+  .dropdown-trigger.open .dropdown-menu {
+    display: block;
+  }
+}
