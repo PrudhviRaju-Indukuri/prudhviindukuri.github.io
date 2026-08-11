@@ -61,3 +61,26 @@ if (window.innerWidth <= 768) {
     });
   });
 }
+
+// Hamburger menu toggle
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", function (e) {
+  e.stopPropagation();
+  navLinks.classList.toggle("active");
+});
+
+// Close menu when a navigation link is clicked
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
+
+// Close menu when clicking anywhere outside
+document.addEventListener("click", function (e) {
+  if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+    navLinks.classList.remove("active");
+  }
+});
