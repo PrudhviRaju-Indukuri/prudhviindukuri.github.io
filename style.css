@@ -706,7 +706,6 @@ a.logo-badge:hover,
 @media (max-width: 992px) {
 
   /* Hero section */
-
   .hero {
     padding: 7rem 4% 3rem;
   }
@@ -742,14 +741,12 @@ a.logo-badge:hover,
     height: 260px;
   }
 
-  /* Stats */
   .stats-grid {
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
   }
 
-  /* Buttons */
   .hero-buttons {
     justify-content: center;
     flex-wrap: wrap;
@@ -760,12 +757,10 @@ a.logo-badge:hover,
     justify-content: center;
   }
 
-  /* About tags */
   .skills-tags {
     justify-content: center;
   }
 
-  /* Timeline */
   .timeline {
     margin-left: 0.5rem;
     padding-left: 1.5rem;
@@ -775,8 +770,9 @@ a.logo-badge:hover,
     left: -1.9rem;
   }
 
-  /* Project cards */
-  .project-grid {
+  .project-grid,
+  .skills-matrix,
+  .education-grid {
     grid-template-columns: 1fr;
   }
 
@@ -784,29 +780,11 @@ a.logo-badge:hover,
     padding: 1.3rem;
   }
 
-  /* Skills */
-  .skills-matrix {
-    grid-template-columns: 1fr;
-  }
-
-  /* Education */
-  .education-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* Contact buttons */
-  .contact-actions {
+  .contact-buttons {
     flex-direction: column;
     align-items: flex-start;
   }
-
-  .social-icon-btn {
-    width: 52px;
-    height: 52px;
-  }
-}
-
-@media (max-width: 576px) {
+} {
 
   .hero-name {
     font-size: 2rem;
