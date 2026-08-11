@@ -943,3 +943,20 @@ a.logo-badge:hover,
     display: block;
   }
 }
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #0b1d3a;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
