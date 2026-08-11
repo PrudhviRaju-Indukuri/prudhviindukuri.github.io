@@ -452,27 +452,98 @@ a.logo-badge:hover,
   gap: 0.4rem;
 }
 
-/* --- HOVER DROPDOWN FOR PROJECT CARDS --- */
+/* ---------- Project cards ---------- */
+.project-card {
+  background: #ffffff;
+  border: 1px solid #dbe4ee;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.project-type {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0f6ecf;
+  letter-spacing: 0.5px;
+}
+
+.project-card h3 {
+  color: #0f172a;
+  font-size: 1.45rem;
+  line-height: 1.35;
+  margin: 0.45rem 0 0.5rem;
+}
+
+.project-location {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: #334155;
+  font-size: 0.97rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+/* ---------- Tags ---------- */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-tags .tag {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  padding: 0.3rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ---------- Dropdown ---------- */
 .dropdown-card {
   position: relative;
+  overflow: visible;
 }
 
 .dropdown-trigger {
   position: relative;
-  margin-top: 1rem;
+  width: 100%;
 }
 
 .dropdown-label {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0.75rem 1rem;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.8rem 1rem;
   background: #f8fafc;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #dbe4ee;
   border-radius: 6px;
+  color: #1e293b;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  color: #1e293b;
+  transition: all 0.2s ease;
+}
+
+.dropdown-label:hover {
+  background: #eef4fb;
+  border-color: #c7d6e6;
 }
 
 .dropdown-menu {
@@ -481,25 +552,32 @@ a.logo-badge:hover,
   left: 0;
   width: 100%;
   background: #ffffff;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #dbe4ee;
   border-radius: 8px;
-  box-shadow: 0 12px 24px rgba(15,23,42,0.12);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
   opacity: 0;
   visibility: hidden;
-  transform: translateY(6px);
+  transform: translateY(8px);
   transition: all 0.2s ease;
-  z-index: 100;
+  z-index: 999;
 }
 
 .dropdown-menu a {
   display: block;
-  padding: 0.75rem 1rem;
+  padding: 0.85rem 1rem;
   color: #1e293b;
   text-decoration: none;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
 }
 
 .dropdown-menu a:hover {
   background: #eff6ff;
+  color: #0f6ecf;
 }
 
 .dropdown-trigger:hover .dropdown-menu {
@@ -508,22 +586,15 @@ a.logo-badge:hover,
   transform: translateY(0);
 }
 
-.brand-link {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  text-decoration: none;
+/* ---------- Section heading ---------- */
+#projects {
+  background: #f8fafc;
 }
 
-.logo-badge {
-  background: #ffffff;
-  color: #0b1d3a;
-  font-weight: 800;
-  padding: 0.25rem 0.65rem;
-  border-radius: 4px;
+#projects .section-header h2 {
+  color: #0f172a;
 }
 
-.brand-link:hover .logo-badge {
-  background: #2563eb;
-  color: #ffffff;
+#projects .section-icon {
+  color: #0f6ecf;
 }
