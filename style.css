@@ -959,3 +959,60 @@ a.logo-badge:hover,
     padding: 12px 16px; /* Larger tap area for fingers */
   }
 }
+
+
+/* --- DESKTOP BEHAVIOR (Screen > 768px) --- */
+@media (min-width: 769px) {
+  .dropdown-card:hover .dropdown-menu,
+  .dropdown-trigger:hover .dropdown-menu {
+    display: block !important;
+    animation: fadeIn 0.2s ease-in-out;
+  }
+}
+
+/* --- MOBILE BEHAVIOR (Screen <= 768px) --- */
+@media (max-width: 768px) {
+  .dropdown-card {
+    position: relative;
+    overflow: visible !important;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: relative; /* Position relative keeps it inside the card flow on mobile */
+    bottom: auto;
+    margin-top: 8px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  /* Shown when active on tap */
+  .dropdown-menu.active {
+    display: block !important;
+    animation: fadeIn 0.2s ease-in-out;
+  }
+
+  .dropdown-menu a {
+    display: block;
+    padding: 12px 16px; /* Larger touch area for fingers */
+    color: #334155 !important;
+    text-decoration: none !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .dropdown-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-menu a:active,
+  .dropdown-menu a:hover {
+    background-color: #f0f9ff !important;
+    color: #0284c7 !important;
+  }
+}
