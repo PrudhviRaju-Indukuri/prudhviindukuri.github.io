@@ -903,3 +903,18 @@ a.logo-badge:hover,
   }
 }
 
+
+/* Fix for unwanted pink underline in the header brand area */
+.brand, 
+.brand a, 
+.brand a:visited, 
+.brand-title {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* Ensure only the logo badge itself has cursor and hover effects, not the title text */
+.brand-title {
+  color: #8da4c4 !important;
+  text-decoration: none !important;
+}
