@@ -50,3 +50,14 @@ document.querySelectorAll(".nav-links a").forEach(link => {
     navLinks.classList.remove("active");
   });
 });
+
+// Mobile dropdown support only
+if (window.innerWidth <= 768) {
+  document.querySelectorAll(".dropdown-label").forEach(button => {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+      const dropdown = this.parentElement;
+      dropdown.classList.toggle("open");
+    });
+  });
+}
