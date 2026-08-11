@@ -513,3 +513,40 @@ section {
   .profile-frame { width: 260px; height: 260px; }
   .nav-links a { margin-left: 1rem; font-size: 0.85rem; }
 }
+
+
+
+/* Button styling */
+.sample-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sample-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.sample-btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Optional Hover Box Styling */
+.card-with-hover {
+  position: relative;
+  cursor: pointer;
+}
+
+.card-with-hover:hover {
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+}
