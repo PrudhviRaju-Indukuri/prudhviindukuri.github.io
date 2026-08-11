@@ -91,3 +91,40 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownTriggers = document.querySelectorAll(".dropdown-trigger");
+
+  dropdownTriggers.forEach(function (trigger) {
+    trigger.addEventListener("click", function (e) {
+      // ONLY trigger on mobile screen widths (768px or below)
+      if (window.innerWidth <= 768) {
+        e.stopPropagation();
+        
+        const menu = this.querySelector(".dropdown-menu");
+        
+        // Close any other open mobile dropdown menus
+        document.querySelectorAll(".dropdown-menu").forEach(function (m) {
+          if (m !== menu) {
+            m.classList.remove("active");
+          }
+        });
+
+        // Toggle the tapped menu open or closed
+        if (menu) {
+          menu.classList.toggle("active");
+        }
+      }
+    });
+  });
+
+  // Close open dropdowns if user taps anywhere else on the screen on mobile
+  document.addEventListener("click", function () {
+    if (window.innerWidth <= 768) {
+      document.querySelectorAll(".dropdown-menu").forEach(function (menu) {
+        menu.classList.remove("active");
+      });
+    }
+  });
+});
