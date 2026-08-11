@@ -697,3 +697,168 @@ a.logo-badge:hover,
   border-color: #0084ff;
   transform: translateY(-2px);
 }
+
+
+/* =================================================
+   MOBILE RESPONSIVE DESIGN
+   ================================================= */
+
+@media (max-width: 992px) {
+
+  /* Navigation */
+  .navbar {
+    padding: 1rem 4%;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    font-size: 0.9rem;
+  }
+
+  /* Hero section */
+  .hero {
+    padding: 7rem 4% 3rem;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-name {
+    font-size: 2.4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    margin: 0 auto 2rem;
+  }
+
+  .hero-image-wrapper {
+    justify-content: center;
+  }
+
+  .profile-frame {
+    width: 260px;
+    height: 260px;
+  }
+
+  /* Stats */
+  .stats-grid {
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  /* Buttons */
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* About tags */
+  .skills-tags {
+    justify-content: center;
+  }
+
+  /* Timeline */
+  .timeline {
+    margin-left: 0.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -1.9rem;
+  }
+
+  /* Project cards */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 1.3rem;
+  }
+
+  /* Skills */
+  .skills-matrix {
+    grid-template-columns: 1fr;
+  }
+
+  /* Education */
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact buttons */
+  .contact-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-icon-btn {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding-top: 8rem;
+  }
+
+  .profile-frame {
+    width: 220px;
+    height: 220px;
+  }
+
+  .section {
+    padding: 3rem 4%;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .dropdown-label {
+    font-size: 0.85rem;
+  }
+
+  .brand-title {
+    font-size: 0.75rem;
+  }
+}
