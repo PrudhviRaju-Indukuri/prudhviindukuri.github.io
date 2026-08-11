@@ -618,3 +618,27 @@ section {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
+
+
+
+/* Maintain flexbox alignment for the brand container */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Restores spacing between PI badge and title */
+}
+
+/* Ensure the link container inherits flex behavior */
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Smooth hover interaction without disrupting layout */
+.logo-link:hover .logo-badge {
+  opacity: 0.9;
+  transform: scale(1.05);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  cursor: pointer;
+}
