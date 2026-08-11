@@ -303,4 +303,554 @@ a.logo-badge:active,
 }
 
 .section-header h2 {
-  font
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.about-text {
+  font-size: 1.05rem;
+  color: #475569;
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+/* SKILLS TAG CARDS */
+.skills-tags {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.tag-icon {
+  color: #0284c7;
+}
+
+/* TIMELINE */
+.timeline {
+  border-left: 2px solid #cbd5e1;
+  margin-left: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #0284c7;
+  border-radius: 50%;
+  position: absolute;
+  left: -2.4rem;
+  top: 6px;
+  box-shadow: 0 0 0 4px #f8fafc;
+}
+
+.job-header h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.job-company {
+  display: block;
+  color: #64748b;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.job-date {
+  display: block;
+  color: #0284c7;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+.job-bullets {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  color: #475569;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.job-bullets li {
+  margin-bottom: 0.4rem;
+}
+
+/* GRIDS (PROJECTS, SKILLS, EDU) */
+.project-grid, .skills-matrix, .education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.skill-category, .edu-card, .cert-box {
+  background: #ffffff;
+  padding: 1.6rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.edu-year {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #0284c7;
+  text-transform: uppercase;
+}
+
+.edu-card h3 {
+  font-size: 1.15rem;
+  margin: 0.3rem 0;
+  color: #0f172a;
+}
+
+.edu-school {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 0.8rem;
+}
+
+/* PROJECT CARDS */
+.project-card {
+  background: #ffffff;
+  border: 1px solid #dbe4ee;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.project-type {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0f6ecf;
+  letter-spacing: 0.5px;
+}
+
+.project-card h3 {
+  color: #0f172a;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin: 0.45rem 0 0.5rem;
+}
+
+.project-location {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.project-description, .project-desc {
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.project-tags, .project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.tag, .project-skills span {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* TECHNICAL SKILLS & CERTS */
+.skill-category h3 {
+  font-size: 1.1rem;
+  color: #0284c7;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.4rem;
+}
+
+.skill-category ul { list-style: none; }
+.skill-category li {
+  font-size: 0.95rem;
+  color: #334155;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.skill-category i { color: #10b981; font-size: 0.85rem; }
+
+.cert-box { margin-top: 1.5rem; }
+.cert-list { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 0.8rem; }
+.cert-badge {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  color: #0369a1;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* --- DROPDOWN TRIGGER & BASE MENU --- */
+.dropdown-card {
+  position: relative;
+}
+
+.dropdown-trigger {
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.dropdown-label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.8rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #dbe4ee;
+  border-radius: 6px;
+  color: #1e293b;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dropdown-label:hover {
+  background: #eef4fb;
+  border-color: #c7d6e6;
+}
+
+.dropdown-menu {
+  display: none;
+  background-color: #ffffff;
+  border-radius: 8px;
+  z-index: 999;
+  padding: 6px 0;
+}
+
+/* Dropdown Menu Item Links */
+.dropdown-menu a,
+.dropdown-menu a:visited,
+.dropdown-menu a:link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #334155 !important;
+  text-decoration: none !important;
+  font-weight: 500;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:active {
+  background-color: #f0f9ff !important;
+  color: #0284c7 !important;
+}
+
+/* --- DESKTOP DROPDOWN (Width > 768px) --- */
+@media (min-width: 769px) {
+  .dropdown-menu {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .dropdown-menu a {
+    padding: 10px 16px;
+    font-size: 0.875rem;
+  }
+
+  .dropdown-card:hover .dropdown-menu,
+  .dropdown-trigger:hover .dropdown-menu {
+    display: block !important;
+    animation: fadeIn 0.2s ease-in-out;
+  }
+}
+
+/* --- MOBILE DROPDOWN (Width <= 768px) --- */
+@media (max-width: 768px) {
+  .dropdown-card {
+    overflow: visible !important;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    margin-top: 8px;
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .dropdown-menu.active {
+    display: block !important;
+    animation: fadeIn 0.2s ease-in-out;
+  }
+
+  .dropdown-menu a {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .dropdown-menu a:last-child {
+    border-bottom: none;
+  }
+
+  /* Navigation Drawer for Mobile */
+  .nav-container {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #0b1d3a;
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 0.75rem 0;
+    color: #ffffff;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- CONTACT SECTION --- */
+.contact-section, .dark-bg { 
+  background-color: #030f26; 
+  color: #ffffff; 
+  padding: 4.5rem 5%;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  margin: 0;
+}
+
+.contact-icon {
+  color: #0084ff;
+  font-size: 1.8rem;
+}
+
+.contact-content {
+  max-width: 800px;
+}
+
+.contact-text {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact-location {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.location-icon {
+  color: #0084ff;
+  font-size: 1.25rem;
+}
+
+.contact-actions, .contact-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.btn-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: #0070f3;
+  color: #ffffff !important;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-email:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+.btn-linkedin, .social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: #0084ff !important;
+  font-size: 1.25rem;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.btn-linkedin:hover, .social-icon-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #0084ff;
+  transform: translateY(-2px);
+}
+
+/* MOBILE RESPONSIVENESS (Layout adjustments) */
+@media (max-width: 992px) {
+  .hero {
+    padding: 7rem 4% 3rem;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-name {
+    font-size: 2.4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    margin: 0 auto 2rem;
+  }
+
+  .hero-image-wrapper {
+    justify-content: center;
+  }
+
+  .profile-frame {
+    width: 260px;
+    height: 260px;
+  }
+
+  .stats-grid {
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .skills-tags {
+    justify-content: center;
+  }
+
+  .timeline {
+    margin-left: 0.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -1.9rem;
+  }
+
+  .project-grid,
+  .skills-matrix,
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
