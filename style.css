@@ -703,29 +703,27 @@ a.logo-badge:hover,
    MOBILE RESPONSIVE DESIGN
    ================================================= */
 
-@media (max-width: 992px) {
+/* Navigation */
+.navbar {
+  padding: 1rem 4%;
+}
 
-  /* Navigation */
-  .navbar {
-    padding: 1rem 4%;
-  }
+.nav-container {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
 
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .nav-links a {
-    margin-left: 0;
-    font-size: 0.9rem;
-  }
+.nav-links a {
+  margin-left: 0;
+  font-size: 0.9rem;
+}
 
   /* Hero section */
   .hero {
@@ -870,8 +868,8 @@ a.logo-badge:hover,
   display: none;
   background: none;
   border: none;
-  color: white;
-  font-size: 1.4rem;
+  color: #ffffff;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -881,6 +879,7 @@ a.logo-badge:hover,
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   .menu-toggle {
@@ -890,13 +889,14 @@ a.logo-badge:hover,
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
-    background: #0b1d3a;
     position: absolute;
     top: 70px;
     left: 0;
+    width: 100%;
+    background: #0b1d3a;
     padding: 1rem;
     border-top: 1px solid rgba(255,255,255,0.1);
+    z-index: 1000;
   }
 
   .nav-links.active {
@@ -904,8 +904,8 @@ a.logo-badge:hover,
   }
 
   .nav-links a {
-    margin: 0.5rem 0;
-    color: white;
+    margin: 0.75rem 0;
+    color: #ffffff;
     text-decoration: none;
   }
 }
@@ -944,19 +944,3 @@ a.logo-badge:hover,
   }
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #0b1d3a;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    padding: 1rem;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-}
