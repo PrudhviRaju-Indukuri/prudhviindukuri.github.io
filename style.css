@@ -599,57 +599,101 @@ a.logo-badge:hover,
   color: #0f6ecf;
 }
 
-
-/* ===== Contact section - white text ===== */
-
-#contact {
-  background: #0b1d3a;
+/* --- CONTACT SECTION (Matches Image Layout) --- */
+.contact-section {
+  background-color: #030f26; /* Deep dark navy background */
   color: #ffffff;
+  padding: 4.5rem 5%;
 }
 
-#contact .section-header h2 {
-  color: #ffffff !important;
-}
-
-#contact .section-header .section-icon {
-  color: #38bdf8;
-}
-
-#contact p,
-#contact .contact-info p {
-  color: #ffffff !important;
-}
-
-#contact .contact-detail {
+.contact-header {
   display: flex;
   align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff !important; /* Pure white heading */
+  margin: 0;
+}
+
+.contact-icon {
+  color: #0084ff; /* Bright blue icon */
+  font-size: 1.8rem;
+}
+
+.contact-content {
+  max-width: 800px;
+}
+
+.contact-text {
+  color: #cbd5e1; /* Soft light slate text */
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact-location {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.location-icon {
+  color: #0084ff;
+  font-size: 1.25rem;
+}
+
+/* BUTTONS */
+.contact-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.btn-email {
+  display: inline-flex;
+  align-items: center;
   gap: 0.6rem;
-  margin: 1rem 0;
-}
-
-#contact .contact-detail i {
-  color: #38bdf8;
-}
-
-#contact .contact-detail span {
+  background-color: #0070f3; /* Bright vibrant blue */
   color: #ffffff !important;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
-#contact .btn-primary {
-  background: #2563eb;
-  color: #ffffff;
+.btn-email:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
 }
 
-#contact .btn-primary:hover {
-  background: #1d4ed8;
+.btn-linkedin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: #0084ff !important;
+  font-size: 1.25rem;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
 }
 
-#contact .social-icon-btn {
-  color: #ffffff;
-  border: 1px solid rgba(255,255,255,0.25);
-}
-
-#contact .social-icon-btn:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: #38bdf8;
+.btn-linkedin:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #0084ff;
+  transform: translateY(-2px);
 }
