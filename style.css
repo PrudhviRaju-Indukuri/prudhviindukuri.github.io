@@ -516,37 +516,89 @@ section {
 
 
 
-/* Button styling */
-.sample-links {
-  margin-top: 15px;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+/* Card Positioning for Dropdown */
+.dropdown-card {
+  position: relative;
+  overflow: visible !important; /* Ensures dropdown isn't clipped by card edges */
 }
 
-.sample-btn {
+/* Dropdown Trigger Bar */
+.dropdown-trigger {
+  position: relative;
+  margin-top: 15px;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-label {
+  display: block;
+  padding: 8px 12px;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover state on the trigger bar */
+.dropdown-card:hover .dropdown-label,
+.dropdown-trigger:hover .dropdown-label {
   background-color: #2563eb;
   color: #ffffff;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.sample-btn:hover {
-  background-color: #1d4ed8;
-  transform: translateY(-2px);
-}
-
-/* Optional Hover Box Styling */
-.card-with-hover {
-  position: relative;
-  cursor: pointer;
-}
-
-.card-with-hover:hover {
   border-color: #2563eb;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+}
+
+/* Hidden Dropdown Menu by Default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  bottom: 100%; /* Displays dropdown above the button (or use top: 100% to open downwards) */
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+  z-index: 50;
+  padding: 6px 0;
+  margin-bottom: 6px;
+}
+
+/* Show Dropdown Menu on Card/Trigger Hover */
+.dropdown-card:hover .dropdown-menu,
+.dropdown-trigger:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+/* Dropdown Menu Item Links */
+.dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  color: #334155;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f8fafc;
+  color: #2563eb;
+}
+
+/* Smooth Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
