@@ -598,3 +598,58 @@ a.logo-badge:hover,
 #projects .section-icon {
   color: #0f6ecf;
 }
+
+
+/* ===== Contact section - white text ===== */
+
+#contact {
+  background: #0b1d3a;
+  color: #ffffff;
+}
+
+#contact .section-header h2 {
+  color: #ffffff !important;
+}
+
+#contact .section-header .section-icon {
+  color: #38bdf8;
+}
+
+#contact p,
+#contact .contact-info p {
+  color: #ffffff !important;
+}
+
+#contact .contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+#contact .contact-detail i {
+  color: #38bdf8;
+}
+
+#contact .contact-detail span {
+  color: #ffffff !important;
+}
+
+#contact .btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+#contact .btn-primary:hover {
+  background: #1d4ed8;
+}
+
+#contact .social-icon-btn {
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+#contact .social-icon-btn:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: #38bdf8;
+}
