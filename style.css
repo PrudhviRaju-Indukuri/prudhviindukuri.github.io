@@ -602,3 +602,19 @@ section {
     transform: translateY(0);
   }
 }
+
+
+/* Remove underline and add pointer cursor */
+.logo-link {
+  text-decoration: none;
+  display: inline-flex;
+}
+
+/* Hover effect on PI badge */
+.logo-link:hover .logo-badge {
+  background-color: #2563eb; /* Primary blue highlight */
+  color: #ffffff;
+  transform: scale(1.08);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
